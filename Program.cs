@@ -23,6 +23,7 @@ namespace ShoppingList
 
             //Dictionary<string, double> buyList = new Dictionary<string, double>(); //Shopping cart
             ArrayList cart = new ArrayList();
+            ArrayList cartTotal = new ArrayList();
 
             Console.WriteLine("Welcome to Guenther's Market!"); //Welcome Message
 
