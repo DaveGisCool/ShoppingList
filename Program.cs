@@ -45,10 +45,10 @@ namespace ShoppingList
                 }
                 else
                 {
-                    Console.WriteLine($"Adding {userSelect} to cart at {items[userSelect]}");//Read input, add to users buyList
+                    Console.WriteLine($"Adding {userSelect} to cart at {items[userSelect]}");//Read input, add to users cart
                         //buyList.Add(userSelect, items[userSelect]);
                         cart.Add(userSelect);
-                        totalCost = totalCost + items[userSelect];
+                        cartTotal.Add(items[userSelect]);
                 }
 
                 Console.Write($"\r\nWould you like to order anything else (y/n)?");
@@ -78,8 +78,9 @@ namespace ShoppingList
             */
             for (int index = 0; index < cart.Count; index++) 
             {
-                string thing = (string)cart[index];
-                Console.WriteLine("{0,-15} {1,5:C2}", cart[index], items[thing]);
+                //string thing = (string)cart[index];
+                totalCost = totalCost + (double)cartTotal[index];
+                Console.WriteLine("{0,-15} {1,5:C2}", cart[index], cartTotal[index]);
             }
                 averagePrice = (totalCost / cart.Count);
             Console.WriteLine($"Average price per item in order was {averagePrice:C2}.");
