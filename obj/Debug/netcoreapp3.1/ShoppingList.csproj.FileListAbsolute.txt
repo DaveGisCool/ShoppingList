@@ -1,0 +1,13 @@
+C:\devbuild4\ShoppingList\bin\Debug\netcoreapp3.1\ShoppingList.exe
+C:\devbuild4\ShoppingList\bin\Debug\netcoreapp3.1\ShoppingList.deps.json
+C:\devbuild4\ShoppingList\bin\Debug\netcoreapp3.1\ShoppingList.runtimeconfig.json
+C:\devbuild4\ShoppingList\bin\Debug\netcoreapp3.1\ShoppingList.runtimeconfig.dev.json
+C:\devbuild4\ShoppingList\bin\Debug\netcoreapp3.1\ShoppingList.dll
+C:\devbuild4\ShoppingList\bin\Debug\netcoreapp3.1\ShoppingList.pdb
+C:\devbuild4\ShoppingList\obj\Debug\netcoreapp3.1\ShoppingList.csprojAssemblyReference.cache
+C:\devbuild4\ShoppingList\obj\Debug\netcoreapp3.1\ShoppingList.AssemblyInfoInputs.cache
+C:\devbuild4\ShoppingList\obj\Debug\netcoreapp3.1\ShoppingList.AssemblyInfo.cs
+C:\devbuild4\ShoppingList\obj\Debug\netcoreapp3.1\ShoppingList.csproj.CoreCompileInputs.cache
+C:\devbuild4\ShoppingList\obj\Debug\netcoreapp3.1\ShoppingList.dll
+C:\devbuild4\ShoppingList\obj\Debug\netcoreapp3.1\ShoppingList.pdb
+C:\devbuild4\ShoppingList\obj\Debug\netcoreapp3.1\ShoppingList.genruntimeconfig.cache
