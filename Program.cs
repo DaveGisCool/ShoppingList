@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace ShoppingList
@@ -9,7 +10,6 @@ namespace ShoppingList
         {
             bool keepLooping = true;
             double averagePrice, totalCost = 0;
-            int cartCount = 0;
 
             Dictionary<string, double> items = new Dictionary<string, double>(); //Menu
             items["apple"] = .99;
@@ -21,7 +21,8 @@ namespace ShoppingList
             items["grapefruit"] = 1.99;
             items["honeydew"] = 3.49;
 
-            Dictionary<string, double> buyList = new Dictionary<string, double>(); //Shopping cart
+            //Dictionary<string, double> buyList = new Dictionary<string, double>(); //Shopping cart
+            ArrayList cart = new ArrayList();
 
             Console.WriteLine("Welcome to Guenther's Market!"); //Welcome Message
 
@@ -44,7 +45,9 @@ namespace ShoppingList
                 else
                 {
                     Console.WriteLine($"Adding {userSelect} to cart at {items[userSelect]}");//Read input, add to users buyList
-                        buyList.Add(userSelect, items[userSelect]);
+                        //buyList.Add(userSelect, items[userSelect]);
+                        cart.Add(userSelect);
+                        totalCost = totalCost + items[userSelect];
                 }
 
                 Console.Write($"\r\nWould you like to order anything else (y/n)?");
@@ -62,7 +65,7 @@ namespace ShoppingList
 
             Console.WriteLine($"\r\nThanks for your order!");//Finalize shopping
             Console.WriteLine("Here's what you got:");
-            foreach (var item in buyList)//List purchases
+            /*foreach (var item in buyList)//List purchases
             {
                 Console.WriteLine("{0,-15} {1,5:C2}", item.Key, item.Value);
             }
@@ -71,7 +74,13 @@ namespace ShoppingList
                 totalCost = totalCost + value;
                 cartCount = cartCount + 1;
             }
-            averagePrice = (totalCost / cartCount);
+            */
+            for (int index = 0; index < cart.Count; index++) 
+            {
+                string thing = (string)cart[index];
+                Console.WriteLine("{0,-15} {1,5:C2}", cart[index], items[thing]);
+            }
+                averagePrice = (totalCost / cart.Count);
             Console.WriteLine($"Average price per item in order was {averagePrice:C2}.");
         }
     }
